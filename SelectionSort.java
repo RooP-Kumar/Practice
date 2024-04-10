@@ -2,7 +2,7 @@ import java.util.*;
 
 public class SelectionSort {
 	public static void main(String[] args) {
-		int[] arr = new int[]{9, 7, 5, 2, 8};
+		int[] arr = new int[]{10, 9, 8, 20, 2, 0, 1, 3};
 		sort(arr);
 	}
 	
