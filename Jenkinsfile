@@ -1,22 +1,23 @@
 pipeline {
-    agent{
-        ubuntu_agent
-    }
-    stage(name: 'Build'){
-        steps {
-            echo "Building........"
-        }
-    }
+    agent any
 
-    stage(name: 'Test'){
-        steps{
-            echo "Testing........"
+    stages {
+        stage('Build'){
+            steps {
+                echo "Building........"
+            }
         }
-    }
+        stage('Test'){
+            steps{
+                echo "Testing........"
+            }
+        }
     
-    stage(name: 'Deploy'){
-        steps{
-            echo "Deploying......."
+        stage('Deploy'){
+            steps{
+                echo "Deploying......."
+            }
         }
     }
+  
 }
