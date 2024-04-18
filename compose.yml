@@ -1,0 +1,21 @@
+services:
+  db:
+    image: mysql
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD : root
+    volumes:
+      - for_sql:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: myphpadmin
+    links:
+      - db:db
+    restart: always
+    ports:
+      - 45:80
+
+volumes:
+  for_sql:
+    external: true

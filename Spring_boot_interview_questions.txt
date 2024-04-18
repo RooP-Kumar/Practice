@@ -1,0 +1,14 @@
+1. thread safe (singleton class)
+2. thread safe singleton using double check locking.
+3. why main method is public and static?
+4. can we override main method?
+5. serialized data?
+6. why should not send the data using a text file?
+7. If serialized class has one unserializable member then how to serialize that class?
+8. what is transient?
+9. Garbage collection works in java?
+10. finalize keyword in garbadge collector
+11. what algorithm jvm use for garbadge collector
+12. even with garbadge collector how memory leaks?
+13. young generation vs old generation memory spaces
+14. 
